@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "histories",
+  "info": {
+    "singularName": "history",
+    "pluralName": "histories",
+    "displayName": "history",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "order-info.address"
+    },
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-info.coffees"
+    },
+    "user": {
+      "type": "component",
+      "repeatable": false,
+      "component": "order-info.user"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "payment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::payment.payment"
+    }
+  }
+}

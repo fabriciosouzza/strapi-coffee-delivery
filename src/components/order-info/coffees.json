@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_order_info_coffees",
+  "info": {
+    "displayName": "Coffees",
+    "icon": "cup",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "coffeeId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coffee.coffee"
+    }
+  }
+}

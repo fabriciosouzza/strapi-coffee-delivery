@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_order_info_users",
+  "info": {
+    "displayName": "user",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}
